@@ -1,1 +1,7 @@
-FROM google/dart-runtime
+FROM dart
+
+WORKDIR /app
+
+COPY . .
+
+CMD [ "dart", "calc.dart" ]
